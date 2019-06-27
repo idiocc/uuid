@@ -8,7 +8,7 @@ import uuid from '@goa/uuid/v4'
 
 %~%
 
-```## v4
+```## v4 => string
 [
   ["options?", "UuidConfig"],
   ["buffer?", "Array|Buffer"],

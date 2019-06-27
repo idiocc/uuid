@@ -12,7 +12,7 @@ yarn add @goa/uuid
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`v4(options?: UuidConfig, buffer?: Array|Buffer, offset?: number)`](#v4options-uuidconfigbuffer-arraybufferoffset-number-void)
+- [`v4(options?: UuidConfig, buffer?: Array|Buffer, offset?: number): string`](#v4options-uuidconfigbuffer-arraybufferoffset-number-string)
   * [`_goa.UuidConfig`](#type-_goauuidconfig)
 - [Copyright](#copyright)
 
@@ -28,7 +28,7 @@ import uuid from '@goa/uuid/v4'
 
 <p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `v4(`<br/>&nbsp;&nbsp;`options?: UuidConfig,`<br/>&nbsp;&nbsp;`buffer?: Array|Buffer,`<br/>&nbsp;&nbsp;`offset?: number,`<br/>`): void`
+## `v4(`<br/>&nbsp;&nbsp;`options?: UuidConfig,`<br/>&nbsp;&nbsp;`buffer?: Array|Buffer,`<br/>&nbsp;&nbsp;`offset?: number,`<br/>`): string`
 
 Generate and return a RFC4122 v4 UUID.
 
