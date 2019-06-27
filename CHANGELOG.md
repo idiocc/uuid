@@ -1,5 +1,9 @@
 ## 27 June 2019
 
+### [1.0.0](https://github.com/idiocc/uuid/compare/v0.0.0-pre...v1.0.0)
+
+- [package] Publish the first version.
+
 ### 0.0.0-pre
 
 - Create `@goa/uuid` with _[`My New Package`](https://mnpjs.org)_
