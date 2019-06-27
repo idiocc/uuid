@@ -15,14 +15,15 @@
     "b": "alamode src -o build -s",
     "d": "yarn-s d1 externs",
     "d1": "typal types/index.js src -c -t types/index.xml",
-    "externs": "typal externs.js",
+    "externs": "typal types/externs.js",
     "build": "yarn-s d b doc",
     "e": "alanode"
   },
   "files": [
     "build",
     "src",
-    "types/externs.js"
+    "types/externs.js",
+    "v4"
   ],
   "externs": "types/externs.js",
   "repository": {
@@ -40,8 +41,8 @@
   },
   "homepage": "https://github.com/idiocc/uuid#readme",
   "devDependencies": {
-    "alamode": "^2.1.2",
-    "documentary": "^1.27.2",
+    "alamode": "^2.3.4",
+    "documentary": "^1.27.3",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
     "zoroaster": "^4.1.1-alpha"

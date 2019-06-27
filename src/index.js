@@ -21,11 +21,11 @@ export default async function uuid(config = {}) {
 /* documentary types/index.xml */
 /**
  * @suppress {nonStandardJsDocs}
- * @typedef {_@goa/uuid.Config} Config Options for the program.
+ * @typedef {_goa.UuidConfig} UuidConfig Optional uuid state to apply.
  */
 /**
  * @suppress {nonStandardJsDocs}
- * @typedef {Object} _@goa/uuid.Config Options for the program.
- * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
- * @prop {string} text A text to return.
+ * @typedef {Object} _goa.UuidConfig Optional uuid state to apply.
+ * @prop {!Array<number>} [random] Array of 16 numbers (0-255) to use in place of randomly generated values.
+ * @prop {function(): !Array<number>} [rng] Random # generator function that returns an Array[16] of byte values (0-255).
  */

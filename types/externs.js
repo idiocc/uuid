@@ -1,5 +1,8 @@
 /* typal types/index.xml externs */
+/** @const */
+var _goa = {}
 /**
- * @typedef {{ shouldRun: (boolean|undefined), text: string }}
+ * Optional uuid state to apply.
+ * @typedef {{ random: ((!Array<number>)|undefined), rng: ((function(): !Array<number>)|undefined) }}
  */
-var Config
+_goa.UuidConfig

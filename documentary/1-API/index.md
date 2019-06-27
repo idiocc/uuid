@@ -1,14 +1,14 @@
 ## API
 
-The package is available by importing its default function:
+The package is available by importing its default function from the `v4` file:
 
 ```js
-import uuid from '@goa/uuid'
+import uuid from '@goa/uuid/v4'
 ```
 
 %~%
 
-```## uuid
+```## v4
 [
   ["arg1", "string"],
   ["arg2?", "boolean"]

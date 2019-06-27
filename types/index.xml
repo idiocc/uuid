@@ -1,10 +1,10 @@
-<types namespace="_@goa/uuid">
-  <type name="Config" desc="Options for the program.">
-    <prop boolean name="shouldRun" default="true">
-      A boolean option.
+<types namespace="_goa">
+  <type name="UuidConfig" desc="Optional uuid state to apply.">
+    <prop opt type="!Array<number>" name="random">
+      Array of 16 numbers (0-255) to use in place of randomly generated values.
     </prop>
-    <prop string name="text">
-      A text to return.
+    <prop opt type="function(): !Array<number>" name="rng">
+      Random # generator function that returns an Array[16] of byte values (0-255).
     </prop>
   </type>
 </types>
