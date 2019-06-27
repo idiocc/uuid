@@ -1,9 +1,5 @@
 /* alanode example/ */
-import uuid from '../src'
+import uuid from '../v4'
 
-(async () => {
-  const res = await uuid({
-    text: 'example',
-  })
-  console.log(res)
-})()
+const res = uuid()
+console.log(res)

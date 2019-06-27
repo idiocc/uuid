@@ -12,51 +12,51 @@ yarn add @goa/uuid
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`uuid(arg1: string, arg2?: boolean)`](#uuidarg1-stringarg2-boolean-void)
-  * [`_@goa/uuid.Config`](#type-_goauuidconfig)
+- [`v4(options?: UuidConfig, buffer?: Array|Buffer, offset?: number)`](#v4options-uuidconfigbuffer-arraybufferoffset-number-void)
+  * [`_goa.UuidConfig`](#type-_goauuidconfig)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/0.svg?sanitize=true"></a></p>
 
 ## API
 
-The package is available by importing its default function:
+The package is available by importing its default function from the `v4` file:
 
 ```js
-import uuid from '@goa/uuid'
+import uuid from '@goa/uuid/v4'
 ```
 
 <p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `uuid(`<br/>&nbsp;&nbsp;`arg1: string,`<br/>&nbsp;&nbsp;`arg2?: boolean,`<br/>`): void`
+## `v4(`<br/>&nbsp;&nbsp;`options?: UuidConfig,`<br/>&nbsp;&nbsp;`buffer?: Array|Buffer,`<br/>&nbsp;&nbsp;`offset?: number,`<br/>`): void`
 
-Call this function to get the result you want.
+Generate and return a RFC4122 v4 UUID.
 
-__<a name="type-_goauuidconfig">`_@goa/uuid.Config`</a>__: Options for the program.
+__<a name="type-_goauuidconfig">`_goa.UuidConfig`</a>__: Optional uuid state to apply.
 
-|   Name    |       Type       |    Description    | Default |
-| --------- | ---------------- | ----------------- | ------- |
-| shouldRun | <em>boolean</em> | A boolean option. | `true`  |
-| __text*__ | <em>string</em>  | A text to return. | -       |
+|  Name  |                   Type                    |                                  Description                                  |
+| ------ | ----------------------------------------- | ----------------------------------------------------------------------------- |
+| random | <em>!Array&lt;number&gt;</em>             | Array of 16 numbers (0-255) to use in place of randomly generated values.     |
+| rng    | <em>function(): !Array&lt;number&gt;</em> | Random # generator function that returns an Array[16] of byte values (0-255). |
 
 ```js
 /* alanode example/ */
-import uuid from '@goa/uuid'
+import uuid from '@goa/uuid/v4'
 
-(async () => {
-  const res = await uuid({
-    text: 'example',
-  })
-  console.log(res)
-})()
+const res = uuid()
+console.log(res)
 ```
 ```
-example
+3a1d3879-5b1a-4189-8207-32b037ec37de
 ```
 
 <p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## Copyright
+
+Original work by [Robert Kieffer](https://github.com/kelektiv/node-uuid/blob/master/LICENSE.md) and other contributors.
+
+---
 
 <table>
   <tr>

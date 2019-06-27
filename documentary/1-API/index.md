@@ -10,16 +10,17 @@ import uuid from '@goa/uuid/v4'
 
 ```## v4
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["options?", "UuidConfig"],
+  ["buffer?", "Array|Buffer"],
+  ["offset?", "number"]
 ]
 ```
 
-Call this function to get the result you want.
+Generate and return a RFC4122 v4 UUID.
 
 %TYPEDEF types/index.xml%
 
-%EXAMPLE: example, ../src => @goa/uuid%
+%EXAMPLE: example, ../v4 => @goa/uuid/v4%
 %FORK example%
 
 %~%
