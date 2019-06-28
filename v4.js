@@ -8,11 +8,11 @@ import bytesToUuid from './src/bytes-to-uuid'
 
  * @param {number} [offset] Starting index in `buffer` at which to begin writing.
  */
-export default function v4(options = {}, buf = null, offset = 0) {
-  var i = buf && offset
+export default function v4(options = {}, buffer = null, offset = 0) {
+  var i = buffer && offset
 
   if (typeof options == 'string') {
-    buf = options == 'binary' ? new Array(16) : null
+    buffer = options == 'binary' ? new Array(16) : null
     options = null
   }
   const { random, rng: rngFn = rng } = /** @type {_goa.UuidConfig} */ (options)
@@ -24,13 +24,13 @@ export default function v4(options = {}, buf = null, offset = 0) {
   rnds[8] = (rnds[8] & 0x3f) | 0x80
 
   // Copy bytes to buffer, if provided
-  if (buf) {
+  if (buffer) {
     for (var ii = 0; ii < 16; ++ii) {
-      buf[i + ii] = rnds[ii]
+      buffer[i + ii] = rnds[ii]
     }
   }
 
-  return buf || bytesToUuid(rnds)
+  return buffer || bytesToUuid(rnds)
 }
 
 /**
