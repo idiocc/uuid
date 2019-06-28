@@ -1,5 +1,5 @@
-import rng from './src/rng'
-import bytesToUuid from './src/bytes-to-uuid'
+import rng from './rng'
+import bytesToUuid from './bytes-to-uuid'
 
 /**
  * Generate and return a RFC4122 v4 UUID.
