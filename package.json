@@ -1,6 +1,6 @@
 {
   "name": "@goa/uuid",
-  "version": "0.0.0-pre",
+  "version": "1.0.0",
   "description": "[fork] Simple, fast generation of RFC4122 UUIDS.",
   "main": "build/index.js",
   "module": "v4.js",
