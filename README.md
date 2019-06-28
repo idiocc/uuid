@@ -20,10 +20,10 @@ yarn add @goa/uuid
 
 ## API
 
-The package is available by importing its default function from the `v4` file:
+The package is available by importing its default function. Only `v4` is supported.
 
 ```js
-import uuid from '@goa/uuid/v4'
+import v4 from '@goa/uuid'
 ```
 
 <p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/1.svg?sanitize=true"></a></p>
@@ -47,7 +47,7 @@ const res = uuid()
 console.log(res)
 ```
 ```
-3a1d3879-5b1a-4189-8207-32b037ec37de
+66534101-c639-4670-a67d-390258a53fb0
 ```
 
 <p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/2.svg?sanitize=true"></a></p>

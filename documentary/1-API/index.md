@@ -1,9 +1,9 @@
 ## API
 
-The package is available by importing its default function from the `v4` file:
+The package is available by importing its default function. Only `v4` is supported.
 
 ```js
-import uuid from '@goa/uuid/v4'
+import v4 from '@goa/uuid'
 ```
 
 %~%
