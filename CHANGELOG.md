@@ -1,3 +1,9 @@
+## 29 June 2019
+
+### [1.0.2](https://github.com/idiocc/uuid/compare/v1.0.1...v1.0.2)
+
+- [package] Correct the `main` field.
+
 ## 28 June 2019
 
 ### [1.0.1](https://github.com/idiocc/uuid/compare/v1.0.0...v1.0.1)
